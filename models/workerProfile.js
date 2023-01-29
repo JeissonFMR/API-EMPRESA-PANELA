@@ -50,7 +50,6 @@ Worker.init({
     modelName: 'Worker'
 });
 
-
 const dbConnect = async () => {
     try {
         await sequelize.sync({ force: false })
