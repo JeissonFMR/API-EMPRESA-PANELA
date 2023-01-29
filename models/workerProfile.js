@@ -52,7 +52,7 @@ Worker.init({
 
 const dbConnect = async () => {
     try {
-        await sequelize.sync({ force: false })
+        await sequelize.sync({ force: true })
         await sequelize.authenticate();
         console.log('**** CONEXIÓN EXITOSA ****');
     } catch (error) {
