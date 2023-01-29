@@ -36,8 +36,6 @@ Worker.init({
     },
     photo: {
         type: DataTypes.TEXT,
-        allowNull: false,
-        defaultvalue: "https://avatars.githubusercontent.com/u/89231420?v=4"
     },
     work: {
         type: DataTypes.TEXT,

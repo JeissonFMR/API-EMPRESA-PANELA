@@ -8,7 +8,9 @@ const { WorkersAPI } = require('./routers/router.workers')
 
 const app = express()
 app.use(cors())
+app.use(express.static('./storageFiles'))
 app.use(express.json())
+
 
 /**
  * UTILIZO LAS RUTAS

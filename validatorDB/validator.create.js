@@ -13,9 +13,6 @@ const validatorCreateWorker = [
         .exists()
         .notEmpty()
         .isNumeric(),
-    check('photo')
-        .default('https://avatars.githubusercontent.com/u/89231420?v=4')
-        .notEmpty(),
     check('work')
         .exists()
         .notEmpty(),
